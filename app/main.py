@@ -5,7 +5,6 @@ from app.limiter_memory import SlidingWindowLimiter as MemLimiter
 
 app = FastAPI(title="Distributed Rate Limiter Interview")
 
-
 limiter = MemLimiter(settings.LIMIT, settings.WINDOW_SECONDS)
 
 
